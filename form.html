@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Html</title>
+  </head>
+  <body>
+    <!-- Pembuatan form -->
+    <h2>Formulir Data</h2>
+    <form action="#" method="post" style="display: grid; width: 300px">
+      <!-- pembuatan inputan teks biasa -->
+      <p>pembuatan inputan teks biasa</p>
+      <input type="text" />
+      <!-- pembuatan inputan email -->
+      <p>pembuatan inputan email</p>
+      <input type="email" />
+      <!-- pembuatan inputan password -->
+      <p>pembuatan inputan password</p>
+      <input type="password" />
+      <!-- pembuatan inputan number -->
+      <p>pembuatan inputan number</p>
+      <input type="number" />
+      <!-- pembuatan inputan color -->
+      <p>pembuatan inputan color</p>
+      <input type="color" />
+      <!-- pembuatan inputan checkbox -->
+      <p>pembuatan inputan checkbox</p>
+      <input type="checkbox" />
+      <!-- pembuatan inputan image -->
+      <p>pembuatan inputan image</p>
+      <input type="image" />
+      <!-- pembuatan inputan radio -->
+      <p>pembuatan inputan radio</p>
+      <input type="radio" />
+      <!-- pembuatan inputan url -->
+      <p>pembuatan inputan url</p>
+      <input type="url" />
+    </form>
+
+    <hr />
+    <br />
+
+    <h4>Fungsi Label</h4>
+    <p>
+      Pada materi seblumnya kita tahu bersama semua inputan terlihat sama. Untuk
+      menandai inputan itu memiliki value yang berbeda maka kita bisa
+      menggunakan: "(Placeholder)" atau menggunakan atribut: "(label)".
+    </p>
+    <p><b>Contoh:</b></p>
+
+    <form
+      action="/https://www.google.com/?zx=1765767181490&no_sw_cr=1"
+      method="post"
+      style="display: grid"
+    >
+      <div>
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" placeholder="Masukkan Nama Lengkap" id="nama" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Masukkan Email Anda" id="email" />
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input
+          type="password"
+          placeholder="Masukkan Password Anda"
+          id="password"
+        />
+      </div>
+      <div>
+        <label for="gender">Jenis Kelamin</label>
+        <label for="gender">Laki-laki</label>
+        <input type="radio" id="gender" />
+        <label for="gender">Perempuan</label>
+        <input type="radio" id="gender" />
+      </div>
+      <!-- Ini adalah button -->
+      <div>
+        <button type="submit">Kirim File</button>
+        <!-- <input type="submit" value="Daftar" /> -->
+      </div>
+    </form>
+  </body>
+</html>
