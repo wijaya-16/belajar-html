@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Html</title>
+  </head>
+  <body>
+    <form action="/home" method="post" style="display: grid">
+      <div>
+        <label for="nama">Nama Lengkap</label>
+        <input
+          type="text"
+          placeholder="Masukkan Nama Lengkap"
+          id="nama"
+          name="nama"
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Masukkan Email Anda"
+          id="email"
+          name="email"
+        />
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input
+          type="password"
+          placeholder="Masukkan Password Anda"
+          id="password"
+          name="password"
+        />
+      </div>
+
+      <!-- Ini adalah button -->
+      <div>
+        <button type="submit">Kirim File</button>
+      </div>
+    </form>
+    <br />
+    <br />
+    <hr style="width: 700px; position: absolute; border: 3px double blue" />
+    <h2>Ketika menggunakan method: <b>"GET"</b></h2>
+    <p>
+      <b style="color: red">Catatan: </b>Harus menambahkan atribut: "name" dan
+      nama dari inputannya.
+    </p>
+    <p>Contoh kode:</p>
+    <img src="/code.png" alt="contoh-code" />
+    <hr style="width: 700px; position: absolute; border: 3px double blue" />
+    <br />
+    <p>Contoh Inputan:</p>
+    <img src="/inputan.png" alt="Inputan-img" />
+    <hr style="width: 700px; position: absolute; border: 3px double blue" />
+    <br />
+    <p>Oputnya:</p>
+    <img src="/output.png" alt="Output-inputan" />
+    <hr style="width: 700px; position: absolute; border: 3px double blue" />
+    <br />
+    <br />
+    <br />
+    <h2>Ketika menggunakan method: <b>"POST"</b></h2>
+    <p>
+      <b style="color: red">Catatan: </b>Ketika datanya <u>Dikirim</u> maka akan
+      langsung menunujukkan sesuai dengan url dari atribut actionnya.
+    </p>
+
+    <p>Contoh kode:</p>
+    <img src="/post.png" alt="post-img" />
+    <hr style="width: 700px; position: absolute; border: 3px double blue" />
+    <br />
+    <p>Contoh Inputan:</p>
+    <img src="/inputan.png" alt="Inputan-img" />
+
+    <hr style="width: 700px; position: absolute; border: 3px double blue" />
+    <p>Oputnya:</p>
+    <img src="/server-home.png" alt="post-img" />
+    <p>
+      <b>Maka akan masuk ke dalam server langsung.</b> Pada bagian klik kanan
+      mouse ➡️ <b>inspect element</b> ➡️ TAB <b>NETWORK</b> ➡️ KLIK kiri home
+      <b>PAYLOAD</b> ➡️ <b>FORM DATA</b>
+    </p>
+    <img src="/server-data-inspect.png" alt="post-img" />
+  </body>
+</html>
