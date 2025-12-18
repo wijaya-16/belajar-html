@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>radio-button_Checkbox__Select</title>
+  </head>
+  <body>
+    <h1>Radio Button checkbox dan Select</h1>
+    <hr />
+    <div
+      class="container"
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding-top: 50px;
+      "
+    >
+      <div class="left">
+        <h3>Data Barang Customer</h3>
+        <form
+          action="/home"
+          method="post"
+          style="
+            padding: 15px;
+            border: 1px solid black;
+            width: 300px;
+            border-radius: 20px;
+          "
+        >
+          <div
+            class="container"
+            style="
+              display: flex;
+              flex-direction: column;
+              padding: 10px;
+              gap: 10px;
+            "
+          >
+            <label for="namaPenerima">Nama Penerima Barang</label>
+            <input
+              type="text"
+              placeholder="Masukkan Nama Penerima Barang"
+              id="namaPenerima"
+              name="namaPenerima"
+            />
+
+            <!--  -->
+            <label for="namaKurir">Nama Kurir</label>
+            <input
+              type="text"
+              placeholder="Masukkan Nama Kurir"
+              id="namaKurir"
+              name="namaKurir"
+            />
+            <!--  -->
+            <div style="border: 5px double blue; padding: 10px">
+              <label for="jenisKelamin">Jenis Kelamin Kurir :</label>
+              <div>
+                <label for="jenisKelamin">Laki-laki</label>
+                <input type="radio" name="jenisKelamin" id="1" />
+                <label for="jenisKelamin">Perempuan</label>
+                <input type="radio" name="jenisKelamin" id="2" />
+              </div>
+            </div>
+
+            <!--  -->
+            <label for="tanggalPengambilanBarang"
+              >Tanggal Pengambilan Barang Oleh Kurir</label
+            >
+            <input type="date" name="tanggalPengambilanBarang" />
+
+            <!--  -->
+            <label for="tanggal">Tanggal Penerimaan Barang</label>
+            <input type="date" name="tanggal" />
+
+            <!--  -->
+            <label for="nama">Nama Barang</label>
+            <input
+              type="text"
+              placeholder="Masukkan Nama Barang"
+              id="namaBarang"
+              name="namaBarang"
+            />
+            <!--  -->
+            <div style="border: 5px double red; padding: 10px">
+              <label for="jenis">Jenis Barang</label>
+              <select name="jenis" id="">
+                <option value="-" selected>------Pilih------</option>
+                <option value="">Pakaian dan Tekstil</option>
+                <option value="">Elektronik Konsumen</option>
+                <option value="">Dokumen dan Surat Penting</option>
+                <option value="">Makanan Kering/Kemasan</option>
+                <option value="">Furnitur atau barang rumah tangga</option>
+                <option value="">Buku dan Mainan</option>
+              </select>
+            </div>
+
+            <!--  -->
+
+            <!--  -->
+            <!-- Ini adalah button -->
+            <button
+              type="button"
+              style="
+                width: auto;
+                height: 30px;
+                border-radius: 5px;
+                box-shadow: 0 1px 0 1px rgb(75, 75, 75);
+              "
+            >
+              Kirim Laporan
+            </button>
+          </div>
+        </form>
+        <br />
+      </div>
+      <!-- ........Batasss........ -->
+      <div
+        class="right"
+        style="
+          width: 800px;
+          border: 5px dotted #e2ad00;
+          padding: 10px;
+          border-radius: 10px;
+        "
+      >
+        <h2>
+          Penjelasan Tentang: <u><strong>Radio Button</strong></u> dan
+          <u><strong>Select</strong></u>
+        </h2>
+
+        <h3>
+          <u><b>Radio Button</b></u>
+        </h3>
+        <p>
+          Pada Kotak Biru adalah contoh dari <b><u>RADIO BUTTON</u></b>
+        </p>
+        <p>
+          Pada contoh disamping kotak biru bisa kita lihat peng gunaan dari
+          radio button dalam memilih jenis kelamin dari seorang kurir pengantar
+          barang.
+        </p>
+        <p>Contoh kode:</p>
+        <img
+          src="/radio-button_Checkbox__Select/radio-btn.png"
+          alt="radio-btn.png"
+          style="width: 400px; border-radius: 10pxz"
+        />
+        <p>
+          Ketika ingin memilih salah satu checklist pada radio button, pada
+          bagian kode input: <b>name="jenisKelamin"</b>
+          <u>Harus sama dengan label</u> pada bagian <b>for="jenisKelamin"</b>.
+          Jika tidak maka tidak akan bisa memilih salah satu dari dua pilihan
+          yang disediakan tersebut.
+        </p>
+        <hr />
+
+        <h3>
+          <u><b>Select</b></u>
+        </h3>
+        <p>
+          Pada Kotak Merah adalah contoh dari <b><u>SELECT</u></b>
+        </p>
+        <div
+          class="el-select"
+          style="display: flex; justify-content: space-evenly; gap: 50px"
+        >
+          <div style="justify-content: center; align-items: center">
+            <p>Contoh Kode:</p>
+            <img
+              src="/radio-button_Checkbox__Select/select.png"
+              alt="select-png"
+              style="width: 400px; border-radius: 10px"
+            />
+          </div>
+          <!--  -->
+          <div>
+            <p>
+              Pada contoh kasus pada kode disamping terlihat bahwa dalam
+              pemilihan barang harus memilih salah satu dengan menggunakan
+              element html yaitu: <b>SELECT</b>.
+            </p>
+            <p>
+              Dengan menambahkan label pada bagian dari penanda bahwa inputan
+              ini memiliki pilihan dari sekkian banyaknya pilihan yang
+              diberikan.
+            </p>
+            <p>
+              Menggunakan Select dari fungsi html 5, dengan memberikan beberapa
+              pilihan yang sesuai dengan yang dibutuhkan.
+            </p>
+            <p>
+              Pada bagian pilihan yang pertama: <b>Selected</b> itu adalah
+              sebuah atribut dari html 5, yang fungsinya
+              <u>
+                untuk menampilkan yang paling pertama yang akan ditampilkan pada
+                inputan select sebelum diklik oleh user dan melakukan pemilihan.
+              </u>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
